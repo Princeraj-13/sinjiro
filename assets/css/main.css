@@ -1979,7 +1979,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     transform: translateY(-2px);
     font-size: 18px;
     color: #fff;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5";
     transition: all 0.3s ease-in-out;
     z-index: 1;
     width: 25px;
