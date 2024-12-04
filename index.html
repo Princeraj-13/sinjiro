@@ -67,7 +67,7 @@
                         <div class="search__top d-flex justify-content-between align-items-center">
                             <div class="search__logo">
                                 <a href="index.html">
-                                    <img data-width="136px" src="assets/img/logo/logo.png" alt="">
+                                    <img width="136px" src="assets/img/logo/logo.png" alt="">
                                 </a>
                             </div>
                             <div class="search__close">
@@ -116,7 +116,7 @@
             </div>
             <div class="tr-offcanvas__logo">
                 <a href="index.html">
-                    <img src="assets/img/logo/logo.png" alt="">
+                    <img src="assets/img/logo/logo.png" width="136px" alt="">
                 </a>
             </div>
             <div class="tr-offcanvas__text">
@@ -233,7 +233,7 @@
                 <div class="row align-items-center">
                     <div class="col-xxl-2 col-xl-2 col-lg-6 col-6">
                         <div class="tr-header-logo">
-                            <a href="index.html"><img data-width="136px" src="assets/img/logo/logo.png" alt=""></a>
+                            <a href="index.html"><img width="136px" src="assets/img/logo/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 d-none d-xl-block">
@@ -255,7 +255,7 @@
                                         <li><a href="index.html">Home 01</a></li>
                                     </ul> -->
                                     </li>
-                                    <li>
+                                    <li class="has-dropdown">
                                         <a href="about-us.html">About
                                             <span>
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -266,9 +266,15 @@
                                                 </svg>
                                             </span>
                                         </a>
+                                        <ul class="tr-submenu tr-submenu submenu">
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="country-list.html">City List</a></li>
+                                        </ul>
                                     </li>
-                                    <li class="has-dropdown">
-                                        <a href="#">Pages
+                                   
+                                    <li>
+                                        <a href="course.html">Courses
                                             <span>
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -278,12 +284,8 @@
                                                 </svg>
                                             </span>
                                         </a>
-                                        <ul class="tr-submenu tr-submenu submenu">
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="country-list.html">City List</a></li>
-                                            <li><a href="country-details.html">City Details</a></li>
-                                        </ul>
                                     </li>
+
                                     <li>
                                         <a href="visa.html">Visa
                                             <span>
@@ -296,8 +298,8 @@
                                             </span>
                                         </a>
                                     </li>
-                                    <li class="has-dropdown">
-                                        <a href="blog.html">Blog
+                                    <li class="">
+                                        <a href="gallery.html">Gallery
                                             <span>
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -307,10 +309,6 @@
                                                 </svg>
                                             </span>
                                         </a>
-                                        <ul class="tr-submenu tr-submenu submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact
@@ -341,7 +339,7 @@
                                 </button>
                             </div>
                             <div class="tr-header-right-btn d-none d-md-block">
-                                <a class="tr-btn" href="contact.html">Get a Quote
+                                <a class="tr-btn" href="contact.html">Register
                                     <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -882,7 +880,7 @@
                                 </i>
                             </span>
                             <h3 class="tr-section-title wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">What
-                                Cliend Say <br> about us</h3>
+                                Students Say <br> about us</h3>
                         </div>
                     </div>
                 </div>
@@ -1341,18 +1339,12 @@
                                     </div>
                                     <div class="col-12 mb-20">
                                         <div class="tr-contact-input-box p-relative">
-                                            <div class="postbox__select">
-                                                <select>
-                                                    <option>Select Subjects</option>
-                                                    <option>01 Year</option>
-                                                    <option>02 Year</option>
-                                                    <option>03 Year</option>
-                                                    <option>04 Year</option>
-                                                    <option>05 Year</option>
-                                                </select>
-                                            </div>
+                                            <input type="text" placeholder="Your Number">
+                                            <span class="tr-contact-input-icon"><i
+                                                    class="fa-light fa-phone"></i></span>
                                         </div>
                                     </div>
+                                    
                                     <div class="col-12 mb-30">
                                         <div class="tr-contact-textarea-box p-relative">
                                             <textarea placeholder="Write Message..."></textarea>
@@ -1376,109 +1368,6 @@
         </div>
         <!-- contact-area-end -->
 
-        <!-- blog-area-start -->
-        <div class="tr-blog-area pt-135 pb-90">
-            <div class="container">
-                <div class="col-12">
-                    <div class="tr-blog-section-title mb-55 text-center">
-                        <span class="tr-section-subtitle">
-                            <i>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18 6.95452L11.4633 6.52463L9 0.336426L6.53671 6.52466L0 6.95456L5.01532 11.206L3.36994 17.6635L9 14.1051L14.6301 17.6635L12.9847 11.2063L18 6.95452ZM9 12.8574L5.04619 15.3563L6.20026 10.8271L2.66586 7.83585L7.27031 7.5334L9 3.18816L10.7297 7.53344L15.3395 7.83585L11.7997 10.8268L12.9538 15.3563L9 12.8574Z"
-                                        fill="currentcolor" />
-                                </svg>
-                            </i> Blog & News
-                            <i>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18 6.95452L11.4633 6.52463L9 0.336426L6.53671 6.52466L0 6.95456L5.01532 11.206L3.36994 17.6635L9 14.1051L14.6301 17.6635L12.9847 11.2063L18 6.95452ZM9 12.8574L5.04619 15.3563L6.20026 10.8271L2.66586 7.83585L7.27031 7.5334L9 3.18816L10.7297 7.53344L15.3395 7.83585L11.7997 10.8268L12.9538 15.3563L9 12.8574Z"
-                                        fill="currentcolor" />
-                                </svg>
-                            </i>
-                        </span>
-                        <h3 class="tr-section-title">Latest New and Blog</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-8 col-lg-6 col-md-6 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-                        <div class="tr-blog-item-wrap">
-                            <div class="tr-blog-item d-flex mb-30 style-2 zoom">
-                                <div class="tr-blog-thumb img-zoom">
-                                    <img src="assets/img/home-01/blog/thumb-2.jpg" alt="">
-                                </div>
-                                <div class="tr-blog-content">
-                                    <h4 class="tr-blog-title mb-15"><a class="border-line-theme title-hover"
-                                            href="blog-details.html">Seamless Transitions Boundless Opportunities</a>
-                                    </h4>
-                                    <p class="mb-25">This depends on the type of visa and the country’s is regulations
-                                        Some visas allow for work</p>
-                                    <div class="tr-blog-meta p-relative">
-                                        <span><i class="fa-light fa-comments"></i>02 Comments</span>
-                                        <span><i class="fa-light fa-user"></i>Admin</span>
-                                        <div class="tr-blog-date d-flex justify-content-center align-items-center">
-                                            <div>
-                                                <span>25</span>
-                                                <i>Jun</i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tr-blog-item d-flex mb-30 style-2 zoom">
-                                <div class="tr-blog-thumb img-zoom">
-                                    <img src="assets/img/home-01/blog/thumb-3.jpg" alt="">
-                                </div>
-                                <div class="tr-blog-content">
-                                    <h4 class="tr-blog-title mb-15"><a class="border-line-theme title-hover"
-                                            href="blog-details.html">Unlocking Doors, One Visa at a any Time
-                                            passport</a></h4>
-                                    <p class="mb-25">The duration varies depending on the type of visa and the country
-                                        of application range</p>
-                                    <div class="tr-blog-meta p-relative">
-                                        <span><i class="fa-light fa-comments"></i>02 Comments</span>
-                                        <span><i class="fa-light fa-user"></i>Admin</span>
-                                        <div class="tr-blog-date d-flex justify-content-center align-items-center">
-                                            <div>
-                                                <span>29</span>
-                                                <i>Jun</i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 mb-30 wow itfadeUp" data-wow-duration=".9s"
-                        data-wow-delay=".3s">
-                        <div class="tr-blog-item mb-30 zoom">
-                            <div class="tr-blog-thumb img-zoom">
-                                <img src="assets/img/home-01/blog/thumb-1.jpg" alt="">
-                            </div>
-                            <div class="tr-blog-content">
-                                <h4 class="tr-blog-title mb-15"><a class="border-line-theme title-hover"
-                                        href="blog-details.html">Simplifying Immigration, One Step at a Time</a></h4>
-                                <p class="mb-25">Generally, you need a valid passport, recent a photographs, completed
-                                    application</p>
-                                <div class="tr-blog-meta p-relative">
-                                    <span><i class="fa-light fa-comments"></i>02 Comments</span>
-                                    <span><i class="fa-light fa-user"></i>Admin</span>
-                                    <div class="tr-blog-date d-flex justify-content-center align-items-center">
-                                        <div>
-                                            <span>25</span>
-                                            <i>Jun</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- blog-area-end -->
 
         <!-- cta-area-start -->
         <div class="tr-cta-area tr-cta-ptb z-index-1 p-relative theme-bg">
@@ -1560,14 +1449,12 @@
                                     <h4 class="tr-footer-widget-title">Our Services</h4>
                                     <div class="tr-footer-widget-menu">
                                         <ul>
-                                            <li><a href="#"><i class="fa-light fa-angle-right"></i>Green Card
-                                                    Guidance</a></li>
+                                            <li><a href="#"><i class="fa-light fa-angle-right"></i>Students Visa
+                                                    Service</a></li>
                                             <li><a href="#"><i class="fa-light fa-angle-right"></i>Citizenship Support
                                                 </a></li>
-                                            <li><a href="#"><i class="fa-light fa-angle-right"></i>Residency
-                                                    Consultation </a></li>
-                                            <li><a href="#"><i class="fa-light fa-angle-right"></i>Student Visa Services
-                                                </a></li>
+                                            <li><a href="#"><i class="fa-light fa-angle-right"></i>Working Visa
+                                                    Service </a></li>
                                             <li><a href="#"><i class="fa-light fa-angle-right"></i>Work Permit Solutions
                                                 </a></li>
                                         </ul>
@@ -1584,7 +1471,7 @@
                                         <li><a href="#"><i class="fa-light fa-angle-right"></i>Home</a></li>
                                         <li><a href="#"><i class="fa-light fa-angle-right"></i>About us</a></li>
                                         <li><a href="#"><i class="fa-light fa-angle-right"></i>Visa</a></li>
-                                        <li><a href="#"><i class="fa-light fa-angle-right"></i>Blog</a></li>
+                                        <li><a href="#"><i class="fa-light fa-angle-right"></i>Courses</a></li>
                                         <li><a href="#"><i class="fa-light fa-angle-right"></i>Contact</a></li>
                                     </ul>
                                 </div>
@@ -1598,28 +1485,23 @@
                                     <ul>
                                         <li>
                                             <div>
+                                                <p>sun - Wed</p>
+                                                <span>8:00 AM - 7:00 PM</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
                                                 <p>Thu - Fri</p>
                                                 <span>8:00 AM - 6:00 PM</span>
                                             </div>
                                         </li>
                                         <li>
                                             <div>
-                                                <p>Mon - Wed</p>
-                                                <span>9:00 AM - 7:00 PM</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
                                                 <p>Saturday</p>
-                                                <span>7:00 AM - 9:00 PM</span>
+                                                <span>Closed</span>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div>
-                                                <p>Sunday</p>
-                                                <span class="active">Close</span>
-                                            </div>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -1628,7 +1510,7 @@
                             data-wow-delay=".9s">
                             <div class="tr-footer-widget d-flex justify-content-xl-end tr-footer-col-2-4">
                                 <div>
-                                    <h4 class="tr-footer-widget-title">Instagram</h4>
+                                    <h4 class="tr-footer-widget-title">Gallery</h4>
                                     <div class="tr-footer-widget-gallery-wrap">
                                         <div class="tr-footer-widget-gallery-item wow img-custom-anim-left"
                                             data-wow-duration="1.5s" data-wow-delay="0.1s">
@@ -1690,7 +1572,7 @@
                                 <div class="tr-copyright-right text-center text-md-end">
                                     <a href="#">Setting & Privacy</a>
                                     <a href="#">FAQ</a>
-                                    <a href="#">Support</a>
+                                    <a href="contact.html">Support</a>
                                 </div>
                             </div>
                         </div>
